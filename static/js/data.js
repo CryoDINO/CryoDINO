@@ -2,17 +2,9 @@ const paper = {
   metadata: {
     title:
       "CryoDINO: A generalizable 3D foundation model for Cryo-electron tomography",
+    url: "https://cryodino.github.io/",
     description:
       "CryoDINO: A generalizable 3D foundation model for Cryo-electron tomography",
-    keywords: [
-      "CryoDINO",
-      "3D foundation model",
-      "Cryo-electron tomography",
-      "self-supervised learning",
-      "macromolecular structure",
-      "sub-cellular architecture",
-      "in situ structural biology",
-    ],
   },
   // navbar: {
   //   home_link: "https://example.com",

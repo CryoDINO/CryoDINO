@@ -29,16 +29,13 @@ function escapeHtml(s) {
 
 const title = escapeHtml(paper.metadata.title);
 const description = escapeHtml(paper.metadata.description);
-const keywords = Array.isArray(paper.metadata.keywords)
-  ? paper.metadata.keywords.join(", ")
-  : String(paper.metadata.keywords || "");
-const keywordsEscaped = escapeHtml(keywords);
+const url = paper.metadata.url ? String(paper.metadata.url) : "";
 
 let indexHtml = fs.readFileSync(indexPath, "utf8");
 indexHtml = indexHtml
   .replace(/\{\{paper\.metadata\.title\}\}/g, title)
   .replace(/\{\{paper\.metadata\.description\}\}/g, description)
-  .replace(/\{\{paper\.metadata\.keywords\}\}/g, keywordsEscaped);
+  .replace(/\{\{paper\.metadata\.url\}\}/g, url);
 
 if (!fs.existsSync(distPath)) fs.mkdirSync(distPath, { recursive: true });
 fs.writeFileSync(path.join(distPath, "index.html"), indexHtml, "utf8");
