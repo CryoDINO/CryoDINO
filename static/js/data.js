@@ -139,13 +139,13 @@ const paper = {
       },
       {
         title: "CryoDINO Sees What Matters — Without Ever Seeing a Label",
-        image: "./static/images/demo-fig2-min.png",
+        image: "./static/images/demo-fig2-min.jpg",
         image_name: "Figure 2 — PCA & Attention Maps",
         text: "Visualizing the internal representations of CryoDINO reveals strikingly structured feature spaces. PCA projections of patch tokens cleanly separate biologically distinct regions — cytoplasm, membrane, and organelles — across all three anatomical planes (axial, coronal, sagittal). Self-attention heads further confirm that the model spontaneously learns to focus on biologically meaningful structures, despite never receiving a single segmentation label during pretraining. These emergent representations are the foundation of CryoDINO's strong downstream transfer.",
       },
       {
         title: "Outperforming a Fully Supervised Expert — With Half the Labels",
-        image: "./static/images/demo-fig3-min.jpg",
+        image: "./static/images/demo-fig3-min.png",
         image_name: "Figure 3 — Radar Charts",
         text: "Across three challenging benchmarks (CZII-10001, CZII-10010, EMPIAR-10989) and diverse subcellular targets — organelles, cytoplasm, actin filaments, and membranes — CryoDINO with a frozen encoder trained on just 50% of labeled data (only for 100 epochs) closely rivals or outperform nnU-Net trained on 100% of labels under its full supervised protocol with deep supervision and test-time postprocessing, and 1000 epochs training . With 100% of labels, CryoDINO surpasses nnU-Net on every axis. This demonstrates that self-supervised pretraining on unlabeled cryo-ET volumes captures representations powerful enough to reduce annotation burden by half without sacrificing accuracy.",
       },
