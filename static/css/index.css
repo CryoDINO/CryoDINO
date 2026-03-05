@@ -5,11 +5,17 @@ body {
 }
 
 .content {
-  max-width: 760px;
+  max-width: 960px;
   margin: auto;
 }
 
-/* Let section images use full container width (960px) while text stays 760px */
+/* Let section columns use full container width so .content can be 960px */
+.section .column.is-four-fifths {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+/* Section images use full container width (960px) */
 .publication-image {
   width: 1200px;
   max-width: calc(100vw - 2rem);
