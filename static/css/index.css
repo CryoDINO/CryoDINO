@@ -22,7 +22,6 @@ body {
   margin-left: 50%;
   transform: translateX(-50%);
   box-sizing: border-box;
-  border-radius: 5px;
 }
 
 .publication-image img {
