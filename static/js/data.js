@@ -1,6 +1,7 @@
 const paper = {
   metadata: {
-    title: "CryoDINO",
+    title:
+      "CryoDINO: A generalizable 3D foundation model for Cryo-electron tomography",
     description:
       "CryoDINO: A generalizable 3D foundation model for Cryo-electron tomography",
     keywords: [
